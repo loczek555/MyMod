@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "custom_mod:platyna_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "custom_mod:platyna"
+  }
+}

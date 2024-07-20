@@ -1,0 +1,11 @@
+{
+  "type": "custom_mod:ore_melter",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "output": {
+    "item": "custom_mod:platyna"
+  }
+}

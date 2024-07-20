@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "custom_mod:block/platyna_block",
+    "side": "custom_mod:block/platyna_block",
+    "top": "custom_mod:block/platyna_block"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "custom_mod:block/ore_melting_station"
+    }
+  }
+}

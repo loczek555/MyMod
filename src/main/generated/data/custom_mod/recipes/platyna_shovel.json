@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "custom_mod:platyna"
+    }
+  },
+  "pattern": [
+    " T ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "custom_mod:platyna_shovel"
+  }
+}

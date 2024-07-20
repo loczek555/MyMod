@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "custom_mod:block/tungsten_block",
+    "side": "custom_mod:block/tungsten_block",
+    "top": "custom_mod:block/tungsten_block"
+  }
+}

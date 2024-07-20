@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "custom_mod:block/platyna_slab"
+    },
+    "type=double": {
+      "model": "custom_mod:block/platyna_block"
+    },
+    "type=top": {
+      "model": "custom_mod:block/platyna_slab_top"
+    }
+  }
+}

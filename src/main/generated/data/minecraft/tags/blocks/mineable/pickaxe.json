@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "custom_mod:platyna_block",
+    "custom_mod:tungsten_block",
+    "custom_mod:platyna_ore_block",
+    "custom_mod:tungsten_ore_block",
+    "custom_mod:platyna_slab",
+    "custom_mod:tungsten_slab",
+    "custom_mod:platyna_stairs",
+    "custom_mod:tungsten_stairs"
+  ]
+}

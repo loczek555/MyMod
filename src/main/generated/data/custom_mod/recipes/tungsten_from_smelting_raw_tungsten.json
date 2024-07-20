@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "custom",
+  "ingredient": {
+    "item": "custom_mod:raw_tungsten"
+  },
+  "result": "custom_mod:tungsten"
+}

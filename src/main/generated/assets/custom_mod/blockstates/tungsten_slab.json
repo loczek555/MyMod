@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "custom_mod:block/tungsten_slab"
+    },
+    "type=double": {
+      "model": "custom_mod:block/tungsten_block"
+    },
+    "type=top": {
+      "model": "custom_mod:block/tungsten_slab_top"
+    }
+  }
+}

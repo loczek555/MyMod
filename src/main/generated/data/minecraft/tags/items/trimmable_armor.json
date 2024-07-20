@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "custom_mod:platyna_helmet",
+    "custom_mod:platyna_chestplate",
+    "custom_mod:platyna_leggings",
+    "custom_mod:platyna_boots",
+    "custom_mod:tungsten_helmet",
+    "custom_mod:tungsten_chestplate",
+    "custom_mod:tungsten_leggings",
+    "custom_mod:tungsten_boots"
+  ]
+}
