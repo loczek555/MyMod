@@ -40,6 +40,7 @@
   "block.custom_mod.ore_melting_station": "Ore Mixing Station",
 
   "itemgroup.custom_ores": "Custom Ores",
+  "itemgroup.custom_armor": "Custom Armor",
   "itemgroup.custom_tools": "Custom Tools",
   "itemgroup.custom_stations": "Custom Stations"
 }

@@ -55,7 +55,7 @@ public class ModItemGroups {
     public static final ItemGroup CUSTOM_ARMOR = Registry.register(Registries.ITEM_GROUP,
             new Identifier(CustomMod.MOD_ID, "custom_armor"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.custom_armor"))
-                    .icon(() -> new ItemStack(ModItems.PLATYNA_PICKAXE)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.PLATYNA_CHESTPLATE)).entries((displayContext, entries) -> {
 
                         entries.add(ModItems.TUNGSTEN_HELMET);
                         entries.add(ModItems.TUNGSTEN_CHESTPLATE);
@@ -72,7 +72,7 @@ public class ModItemGroups {
     public static final ItemGroup CUSTOM_STATIONS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(CustomMod.MOD_ID, "custom_stations"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.custom_stations"))
-                    .icon(() -> new ItemStack(ModItems.PLATYNA_PICKAXE)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocks.ORE_MELTING_STATION)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.ORE_MELTING_STATION);
 

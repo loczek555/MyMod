@@ -26,7 +26,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PLATYNA_SLAB)
                 .add(ModBlocks.TUNGSTEN_SLAB)
                 .add(ModBlocks.PLATYNA_STAIRS)
-                .add(ModBlocks.TUNGSTEN_STAIRS);
+                .add(ModBlocks.TUNGSTEN_STAIRS)
+
+                .add(ModBlocks.ORE_MELTING_STATION);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.ORE_MELTING_STATION);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.TUNGSTEN_ORE_BLOCK)
