@@ -1,0 +1,45 @@
+{
+  "item.custom_mod.platyna": "Platinum Ingot",
+  "item.custom_mod.tungsten": "Tungsten Ingot",
+  "item.custom_mod.raw_platyna": "Raw Platinum",
+  "item.custom_mod.raw_tungsten": "Raw Tungsten",
+
+  "item.custom_mod.tungsten_pickaxe": "Tungsten Pickaxe",
+  "item.custom_mod.tungsten_axe": "Tungsten Axe",
+  "item.custom_mod.tungsten_sword": "Tungsten Sword",
+  "item.custom_mod.tungsten_shovel": "Tungsten Shovel",
+  "item.custom_mod.tungsten_hoe": "Tungsten Hoe",
+
+  "item.custom_mod.platyna_pickaxe": "Platinum Pickaxe",
+  "item.custom_mod.platyna_axe": "Platinum Axe",
+  "item.custom_mod.platyna_sword": "Platinum Sword",
+  "item.custom_mod.platyna_shovel": "Platinum Shovel",
+  "item.custom_mod.platyna_hoe": "Platinum Hoe",
+
+  "item.custom_mod.platyna_helmet": "Platinum Helmet",
+  "item.custom_mod.platyna_chestplate": "Platinum Chestplate",
+  "item.custom_mod.platyna_leggings": "Platinum Leggings",
+  "item.custom_mod.platyna_boots": "Platinum Boots",
+
+  "item.custom_mod.tungsten_helmet": "Tungsten Helmet",
+  "item.custom_mod.tungsten_chestplate": "Tungsten Chestplate",
+  "item.custom_mod.tungsten_leggings": "Tungsten Leggings",
+  "item.custom_mod.tungsten_boots": "Tungsten Boots",
+
+  "block.custom_mod.platyna_block": "Platinum Block",
+  "block.custom_mod.tungsten_block": "Tungsten Block",
+  "block.custom_mod.platyna_ore_block": "Platinum Ore",
+  "block.custom_mod.tungsten_ore_block": "Tungsten Ore",
+
+  "block.custom_mod.platyna_stairs": "Platinum Stairs",
+  "block.custom_mod.tungsten_stairs": "Tungsten Stairs",
+
+  "block.custom_mod.platyna_slab": "Platinum Slab",
+  "block.custom_mod.tungsten_slab": "Tungsten Slab",
+
+  "ore_melting_station_block": "Ore Mixing Station",
+
+  "itemgroup.custom_ores": "Custom Ores",
+  "itemgroup.custom_tools": "Custom Tools",
+  "itemgroup.custom_stations": "Custom Stations"
+}
