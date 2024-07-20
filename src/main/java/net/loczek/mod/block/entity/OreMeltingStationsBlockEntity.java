@@ -2,7 +2,7 @@ package net.loczek.mod.block.entity;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.loczek.mod.recipe.OreMelterRecipe;
-import net.loczek.mod.screen.OreSmeltingScreenHandler;
+import net.loczek.mod.screen.OreMeltingScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -28,16 +28,16 @@ import java.util.Optional;
 public class OreMeltingStationsBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3, ItemStack.EMPTY);
 
-    //private static final int INPUT_SLOT1 = 0;
-    private static final int INPUT_SLOT = 0;
-    private static final int OUTPUT_SLOT = 1;
+    private static final int INPUT_SLOT_1 = 0;
+    private static final int INPUT_SLOT_2 = 1;
+    private static final int OUTPUT_SLOT = 2;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
     private int maxProgress = 72;
 
     public OreMeltingStationsBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.ORE_MELTING_STATIONS_BLOCK_BLOCK_ENTITY, pos, state);
+        super(ModBlockEntities.ORE_MELTING_STATIONS_BLOCK_ENTITY, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {
@@ -58,7 +58,7 @@ public class OreMeltingStationsBlockEntity extends BlockEntity implements Extend
 
             @Override
             public int size() {
-                return 3;
+                return 2;
             }
         };
     }
@@ -95,20 +95,20 @@ public class OreMeltingStationsBlockEntity extends BlockEntity implements Extend
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new OreSmeltingScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
+        return new OreMeltingScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
-        if (world.isClient()) {
+        if(world.isClient()) {
             return;
         }
 
         if(isOutputSlotEmptyOrReceivable()) {
-            if (this.hasRecipe()) {
+            if(this.hasRecipe()) {
                 this.increaseCraftProgress();
                 markDirty(world, pos, state);
 
-                if (hasCraftingFinished()) {
+                if(hasCraftingFinished()) {
                     this.craftItem();
                     this.resetProgress();
                 }
@@ -128,8 +128,8 @@ public class OreMeltingStationsBlockEntity extends BlockEntity implements Extend
     private void craftItem() {
         Optional<RecipeEntry<OreMelterRecipe>> recipe = getCurrentRecipe();
 
-        this.removeStack(INPUT_SLOT, 1);
-        //this.removeStack(INPUT_SLOT2, 1);
+        this.removeStack(INPUT_SLOT_1, 1);
+        this.removeStack(INPUT_SLOT_2, 1);
 
         this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().getResult(null).getItem(),
                 getStack(OUTPUT_SLOT).getCount() + recipe.get().value().getResult(null).getCount()));

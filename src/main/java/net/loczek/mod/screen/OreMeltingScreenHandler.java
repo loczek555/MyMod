@@ -12,29 +12,30 @@ import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 
-public class OreSmeltingScreenHandler extends ScreenHandler {
+public class OreMeltingScreenHandler extends ScreenHandler {
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
     public final OreMeltingStationsBlockEntity blockEntity;
 
-    public OreSmeltingScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
+    public OreMeltingScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
         this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()),
-                new ArrayPropertyDelegate(3));
+                new ArrayPropertyDelegate(2));
     }
 
 
-
-    public OreSmeltingScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
+    public OreMeltingScreenHandler(int syncId, PlayerInventory playerInventory,
+                                     BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
         super(ModScreenHandlers.ORE_SMELTING_SCREEN_HANDLER, syncId);
         checkSize(((Inventory) blockEntity), 3);
         this.inventory = ((Inventory) blockEntity);
-        playerInventory.onOpen(playerInventory.player);
+        inventory.onOpen(playerInventory.player);
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = ((OreMeltingStationsBlockEntity) blockEntity);
 
-        this.addSlot(new Slot(inventory, 0, 60, 11));
-        this.addSlot(new Slot(inventory, 1, 100, 11));
+        this.addSlot(new Slot(inventory, 0, 100, 11));
+        this.addSlot(new Slot(inventory, 1, 60, 11));
         this.addSlot(new Slot(inventory, 2, 80, 59));
+
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
@@ -78,7 +79,6 @@ public class OreSmeltingScreenHandler extends ScreenHandler {
 
         return newStack;
     }
-
 
     @Override
     public boolean canUse(PlayerEntity player) {

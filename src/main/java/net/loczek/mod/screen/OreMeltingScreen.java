@@ -9,10 +9,10 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class OreSmeltingScreen extends HandledScreen<OreSmeltingScreenHandler> {
+public class OreMeltingScreen extends HandledScreen<OreMeltingScreenHandler> {
     private static final Identifier TEXTURE = new Identifier(CustomMod.MOD_ID, "textures/gui/ore_smelting_station_gui.png");
 
-    public OreSmeltingScreen(OreSmeltingScreenHandler handler, PlayerInventory inventory, Text title) {
+    public OreMeltingScreen(OreMeltingScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
 
@@ -26,7 +26,7 @@ public class OreSmeltingScreen extends HandledScreen<OreSmeltingScreenHandler> {
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
         RenderSystem.setShader(GameRenderer::getPositionTexProgram);
-        RenderSystem.setShaderColor(1f, 1f,1f,1f);
+        RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
@@ -34,7 +34,7 @@ public class OreSmeltingScreen extends HandledScreen<OreSmeltingScreenHandler> {
         context.drawTexture(TEXTURE, x, y, 0, 0, backgroundWidth, backgroundHeight);
 
         renderProgressArrow(context, x, y);
-        }
+    }
 
     private void renderProgressArrow(DrawContext context, int x, int y) {
         if(handler.isCrafting()) {
@@ -49,4 +49,3 @@ public class OreSmeltingScreen extends HandledScreen<OreSmeltingScreenHandler> {
         drawMouseoverTooltip(context, mouseX, mouseY);
     }
 }
-

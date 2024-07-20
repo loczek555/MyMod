@@ -37,7 +37,7 @@
   "block.custom_mod.platyna_slab": "Platinum Slab",
   "block.custom_mod.tungsten_slab": "Tungsten Slab",
 
-  "ore_melting_station_block": "Ore Mixing Station",
+  "block.custom_mod.ore_melting_station": "Ore Mixing Station",
 
   "itemgroup.custom_ores": "Custom Ores",
   "itemgroup.custom_tools": "Custom Tools",
