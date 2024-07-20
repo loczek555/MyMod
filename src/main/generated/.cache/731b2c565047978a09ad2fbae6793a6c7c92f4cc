@@ -1,4 +1,4 @@
-// 1.20.4	2024-07-20T15:27:31.0768586	mod/Tags for minecraft:block
+// 1.20.4	2024-07-20T17:53:20.4284886	mod/Tags for minecraft:block
 217a46d8ea83cf6f9195949cf4dc74c158e39181 data\fabric\tags\blocks\needs_tool_level_5.json
 828adb8caf87fd9854374523fc131b66931fa22b data\minecraft\tags\blocks\needs_stone_tool.json
 926ea8d34e4185c8f1343e532d3eb7e668f0169e data\minecraft\tags\blocks\mineable\pickaxe.json
